@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoMdArrowDropupCircle, IoMdArrowDropdownCircle } from "react-icons/io";
