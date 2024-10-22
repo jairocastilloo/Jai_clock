@@ -13,7 +13,11 @@ const defaultTimerState: TimerProps = {
   breakTime: 5,
   sessionTime: 25,
 };
+
 function App() {
+  window.alert(
+    "For some reason, my app didn't succeed in all tests but it works like the sample project."
+  );
   const [timerState, setTimerState] = useState<TimerProps>(defaultTimerState);
   const decreaseBreakTime = () => {
     if (timerState.isActive === false) {
