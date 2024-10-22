@@ -15,9 +15,12 @@ const defaultTimerState: TimerProps = {
 };
 
 function App() {
-  window.alert(
-    "For some reason, my app didn't succeed in all tests but it works like the sample project."
-  );
+  useEffect(() => {
+    // Alert only on the initial load of the component
+    window.alert(
+      "For some reason, my app didn't succeed in all tests but it works like the sample project."
+    );
+  }, []);
   const [timerState, setTimerState] = useState<TimerProps>(defaultTimerState);
   const decreaseBreakTime = () => {
     if (timerState.isActive === false) {
